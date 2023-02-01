@@ -19,7 +19,22 @@ let App = () => {
     <div>
       <ul>
         {userInfo.map((user, i) => {
-          return <UserCard key={i} user={user} id={i} />;
+          return (
+            <UserCard
+              key={i}
+              firstName={user.name.first}
+              lastName={user.name.last}
+              picture={user.picture.large}
+              phone={user.cell}
+              email={user.email}
+              streetNumber={user.location.street.number}
+              streetName={user.location.street.name}
+              city={user.location.city}
+              state={user.location.state}
+              country={user.location.country}
+              postcode={user.location.postcode}
+            />
+          );
         })}
       </ul>
     </div>

@@ -1,61 +1,51 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BsPhone } from 'react-icons/bs';
 import { HiOutlineMail } from 'react-icons/hi';
 import { FiHome } from 'react-icons/fi';
 import './UserCard.css';
 
-let UserCard = (props) => {
-  let getInfo = (id, e) => {
-    let infoCard = document.getElementById(id);
-    if (infoCard.style.visibility == 'hidden') {
-      infoCard.style.visibility = 'visible';
-    } else {
-      infoCard.style.visibility = 'hidden';
-    }
-    if (e.innerText == 'SHOW DETAILS') {
-      e.innerText = 'HIDE DETAILS';
-    } else {
-      e.innerText = 'SHOW DETAILS';
-    }
-  };
+function UserCard(props) {
+  const [isHidden, setHide] = useState(true);
 
   return (
     <div className='user-card'>
-      <li key={props.key}>
+      <li style={{ listStyle: 'none' }} key={props.key}>
         <div className='card'>
           <div className='name'>
-            {props.user.name.first} {props.user.name.last}
+            {props.firstName} {props.lastName}
           </div>
-          <img src={props.user.picture.large} class='img'></img>
-          <button
-            className='button'
-            onClick={(e) => {
-              getInfo(props.id, e.target);
+          <img
+            src={props.picture}
+            className='img'
+            onClick={() => {
+              isHidden ? setHide(false) : setHide(true);
             }}
-          >
-            SHOW DETAILS
-          </button>
+          ></img>
         </div>
-        <div id={props.id} className='info'>
+        {isHidden ? (
+          <div></div>
+        ) : (
           <div>
-            <BsPhone /> {'- ' + props.user.cell}{' '}
+            <div>
+              <BsPhone /> {'- ' + props.phone}{' '}
+            </div>
+            <div>
+              <HiOutlineMail /> {'- ' + props.email}
+            </div>
+            <div>
+              <FiHome />
+              {' - ' + props.streetNumber}
+              {' ' + props.streetName} <br />
+              {' ' + props.city}
+              {', ' + props.state} <br />
+              {' ' + props.country} <br />
+              {' ' + props.postcode}
+            </div>
           </div>
-          <div>
-            <HiOutlineMail /> {'- ' + props.user.email}
-          </div>
-          <div>
-            <FiHome />
-            {' - ' + props.user.location.street.number}
-            {' ' + props.user.location.street.name} <br />
-            {' ' + props.user.location.city}
-            {', ' + props.user.location.state} <br />
-            {' ' + props.user.location.country} <br />
-            {' ' + props.user.location.postcode}
-          </div>
-        </div>
+        )}
       </li>
     </div>
   );
-};
+}
 
 export default UserCard;
