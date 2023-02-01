@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import UserCard from './components/UserCard';
 import axios from 'axios';
+import './index.css';
 
 let App = () => {
   let [userInfo, setUserInfo] = useState([]);
@@ -17,6 +18,10 @@ let App = () => {
 
   return (
     <div>
+      <div className='app-header'>
+        <h1>Address Book</h1>
+        <h3>Click a User's picture to expand details</h3>
+      </div>
       <ul>
         {userInfo.map((user, i) => {
           return (
