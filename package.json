@@ -1,7 +1,7 @@
 {
   "name": "js-411-address-book",
   "version": "0.1.0",
-  "homepage": "https://johnnyculbreth.github.io/",
+  "homepage": "https://johnnyculbreth.github.io",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
