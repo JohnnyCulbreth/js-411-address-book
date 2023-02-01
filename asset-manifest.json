@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/JohnnyCulbreth/js-411-address-book/static/css/main.f637a454.css",
-    "main.js": "/JohnnyCulbreth/js-411-address-book/static/js/main.a6583fc9.js",
-    "static/js/787.1a4ece53.chunk.js": "/JohnnyCulbreth/js-411-address-book/static/js/787.1a4ece53.chunk.js",
-    "index.html": "/JohnnyCulbreth/js-411-address-book/index.html",
-    "main.f637a454.css.map": "/JohnnyCulbreth/js-411-address-book/static/css/main.f637a454.css.map",
-    "main.a6583fc9.js.map": "/JohnnyCulbreth/js-411-address-book/static/js/main.a6583fc9.js.map",
-    "787.1a4ece53.chunk.js.map": "/JohnnyCulbreth/js-411-address-book/static/js/787.1a4ece53.chunk.js.map"
+    "main.css": "/static/css/main.463ff770.css",
+    "main.js": "/static/js/main.10bff150.js",
+    "static/js/787.1a4ece53.chunk.js": "/static/js/787.1a4ece53.chunk.js",
+    "index.html": "/index.html",
+    "main.463ff770.css.map": "/static/css/main.463ff770.css.map",
+    "main.10bff150.js.map": "/static/js/main.10bff150.js.map",
+    "787.1a4ece53.chunk.js.map": "/static/js/787.1a4ece53.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f637a454.css",
-    "static/js/main.a6583fc9.js"
+    "static/css/main.463ff770.css",
+    "static/js/main.10bff150.js"
   ]
 }
