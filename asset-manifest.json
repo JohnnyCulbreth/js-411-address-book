@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/JohnnyCulbreth/js-411-address-book/static/css/main.f637a454.css",
+    "main.js": "/JohnnyCulbreth/js-411-address-book/static/js/main.a6583fc9.js",
+    "static/js/787.1a4ece53.chunk.js": "/JohnnyCulbreth/js-411-address-book/static/js/787.1a4ece53.chunk.js",
+    "index.html": "/JohnnyCulbreth/js-411-address-book/index.html",
+    "main.f637a454.css.map": "/JohnnyCulbreth/js-411-address-book/static/css/main.f637a454.css.map",
+    "main.a6583fc9.js.map": "/JohnnyCulbreth/js-411-address-book/static/js/main.a6583fc9.js.map",
+    "787.1a4ece53.chunk.js.map": "/JohnnyCulbreth/js-411-address-book/static/js/787.1a4ece53.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f637a454.css",
+    "static/js/main.a6583fc9.js"
+  ]
+}
